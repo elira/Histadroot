@@ -25,21 +25,9 @@ $primary: $blue;
 
 // 4. Import the rest of Bulma
 
-@import "./node_modules/bulma-rtl/bulma";
+@import "./node_modules/bulma-rtl/bulma-rtl";
 
-.past-project{
+
+.padding-1{
     padding: 1rem;
-    
-
-    .background{
-        background: $light;
-        padding: 1rem;
-        border-radius: 1rem;
-    }
 }
-
-.my-header{
-    color: $white;
-    background-color: $primary;
-}
-//html { background-color: $green;}
