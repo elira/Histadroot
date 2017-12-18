@@ -1,0 +1,35 @@
+{
+  "name": "Histadroot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress --colors --watch",
+    "css-build": "node-sass _sass/main.scss css/main.css",
+    "css-deploy": "npm run css-build && npm run css-postcss",
+    "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
+    "css-watch": "npm run css-build -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elira/Histadroot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elira/Histadroot/issues"
+  },
+  "homepage": "https://github.com/elira/Histadroot#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "bulma-rtl": "0.6.1",
+    "css-loader": "^0.28.7",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.9.1"
+  }
+}
